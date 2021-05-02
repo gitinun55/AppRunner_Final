@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    tools:context=".MyRecyclerAdapter_address">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="411dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="#FFFF"
+        app:cardCornerRadius="7dp">
+
+        <RelativeLayout
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/text_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opunmairegular"
+                android:text="ที่อยู่ : "
+                android:textColor="#000000"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/text_address"
+                android:text="address"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/edt_address"
+                android:fontFamily="@font/opunmairegular"
+                android:text="ที่อยู่ตั้งต้น"
+                android:textColor="#000000"
+                android:textSize="10dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/text_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opunmairegular"
+                android:text="ตำบล : "
+                android:textColor="#000000"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/text_district"
+                android:text="district"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/text_Mueang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_district"
+                android:fontFamily="@font/opunmairegular"
+                android:text="เมือง : "
+                android:textColor="#000000"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/edt_Mueang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/text_Mueang"
+                android:text="Mueang"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/text_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/edt_Mueang"
+                android:fontFamily="@font/opunmairegular"
+                android:text="จังหวัด : "
+                android:textColor="#000000"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/text_province"
+                android:text="province"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/text_country_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_province"
+                android:fontFamily="@font/opunmairegular"
+                android:text="รหัสไปรษณีย์ : "
+                android:textColor="#000000"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/text_country_number"
+                android:text="country_number"
+                android:textSize="10dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opunmairegular"
+                android:text="ชื่อ : "
+                android:textColor="#000000"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/text_name"
+                android:text="FName"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/tv_fname"
+                android:text="FName"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/text_Tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_lname"
+                android:fontFamily="@font/opunmairegular"
+                android:text="เบอร์โทนศัพท์ : "
+                android:textColor="#000000"
+                android:textSize="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_Tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/text_Tel"
+                android:text="country_number"
+                android:textSize="10dp"></TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

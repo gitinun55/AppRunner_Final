@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context=".Organizer.menu2_profile_event.Activity.ListNameRegEventActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_NameEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/text_name_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opunmairegular"
+            android:text="รายชื่อผู้สมัครวิ่ง"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_name_event"
+            android:fontFamily="@font/opunmairegular"
+            android:text="คุณกำลังเลือกงานวิ่ง : "
+            android:textColor="#000000"
+            android:textSize="14dp">
+        </TextView>
+        <TextView
+            android:id="@+id/text_show_NameEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_name_event"
+            android:layout_toRightOf="@id/text_name"
+            android:layout_marginLeft="5dp"
+            android:text="test"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:fontFamily="@font/opunmairegular">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_NameEvent"
+        android:layout_marginTop="20dp">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2,3,4,5"
+            android:background="#f1f1f1">
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="10dp"
+                    android:text="ID"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/opunmairegular"
+                    android:textSize="10dp"
+                    android:padding="10dp"
+                    android:layout_column="1">
+                </TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="10dp"
+                    android:text="ชื่อ"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/opunmairegular"
+                    android:textSize="10dp"
+                    android:padding="10dp"
+                    android:layout_column="2">
+                </TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="10dp"
+                    android:text="นามสกุล"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/opunmairegular"
+                    android:textSize="10dp"
+                    android:padding="10dp"
+                    android:layout_column="3">
+                </TextView>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="10dp"
+                    android:text="เบอร์โทรศัพท์"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/opunmairegular"
+                    android:textSize="10dp"
+                    android:padding="10dp"
+                    android:layout_column="4">
+                </TextView>
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_tableData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

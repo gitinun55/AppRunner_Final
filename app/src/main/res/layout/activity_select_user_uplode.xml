@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context=".SelectUserUplodeActivity">
+
+    <TextView
+        android:id="@+id/title_NameEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="งานวิ่งที่คุณต้องการอัปโหลด"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/opunmairegular"
+        android:textStyle="bold"
+        android:textSize="16dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="*โปรดตรวจสอบว่าชื่องานตรงกับที่เลือกหรือไม่"
+        android:textColor="#000000"
+        android:textSize="10dp"></TextView>
+
+    <TextView
+        android:id="@+id/name_event_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name_event"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/opunmairegular">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เลือกผู้ใช้ที่ต้องการอัปโหลดสถิติ"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/opunmairegular"
+        android:textStyle="bold"
+        android:textSize="16dp">
+    </TextView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_user_upload_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

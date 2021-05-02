@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context=".User.menu3_submit_payment.Activity.PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รายละเอียดการชำระ"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="@font/opunmairegular"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp">
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="สามารถกลับมาชำระได้ใหม่ในการส่งหลักฐานการชำระ"
+                android:textColor="#000000"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/title2">
+            <ImageView
+                android:id="@+id/id"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/payment">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title3">
+            <TextView
+                android:id="@+id/text_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ธนาคาร :"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+
+            <TextView
+                android:id="@+id/bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/text_bank"
+                android:fontFamily="@font/opunmairegular"
+                android:hint=""
+                android:textColor="#000000"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title4">
+            <TextView
+                android:id="@+id/text_numberpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เลขบัญชี :"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <TextView
+                android:id="@+id/number_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:fontFamily="@font/opunmairegular"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/text_numberpayment">
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title5">
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ยอดชำระ :"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <TextView
+                android:id="@+id/number_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:fontFamily="@font/opunmairegular"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/text_price">
+            </TextView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_payment"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_blue"
+            android:text="ส่งหลักฐานการชำระ"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/title6"
+            android:textSize="14sp"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_payment"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_bg"
+            android:text="กลับไปหน้าหลัก">
+        </Button>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Organizer.menu1_home.Fragment.MainFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/ic_username"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_baseline_person_24"></ImageView>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/ic_username"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="30dp"
+                    android:text="สวัสดี"
+                    android:fontFamily="@font/opunmairegular"></TextView>
+
+                <TextView
+                    android:id="@+id/showname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_marginLeft="110dp"
+                    android:text="ชื่อ : "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/opunmairegular"/>
+
+                <TextView
+                    android:id="@+id/tv_FName"
+                    android:layout_below="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opunmairegular"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="FName "/>
+
+                <TextView
+                    android:id="@+id/tv_LName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_FName"
+                    android:text="LName "
+                    android:fontFamily="@font/opunmairegular"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stuts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showname"
+                    android:layout_marginLeft="110dp"
+                    android:fontFamily="@font/opunmairegular"
+                    android:text="สถานะ :"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tv_stuts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showname"
+                    android:layout_marginLeft="180dp"
+                    android:fontFamily="@font/opunmairegular"
+                    android:text="Stutus"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/edt_search_producer"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:textAlignment="center"
+                    android:hint="Search Event"
+                    android:background="@drawable/round_white"/>
+
+                <Button
+                    android:id="@+id/bt_search_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/round_primary"
+                    android:layout_marginLeft="5dp"
+                    android:text="Search" />
+            </LinearLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refreshlayout_organizer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_add_24" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

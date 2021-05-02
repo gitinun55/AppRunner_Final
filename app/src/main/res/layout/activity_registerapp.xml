@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    android:layout_height="match_parent"
+    tools:context=".Login.RegisterappActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="ลงทะเบียนสมัครสมาชิก"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/opunmairegular">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/title_FName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/FName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อ          :"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+
+            <EditText
+                android:id="@+id/id_FName"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/FName"
+                android:background="@drawable/round_white"
+                android:inputType="text">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_LName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_FName">
+            <TextView
+                android:id="@+id/LName"
+                android:text="นามสกุล   :"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+
+            <EditText
+                android:id="@+id/id_LName"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_white"
+                android:layout_toRightOf="@id/LName">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_LName">
+            <TextView
+                android:id="@+id/Email"
+                android:text="อีเมล์        :"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <EditText
+                android:id="@+id/id_email"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="textEmailSubject"
+                android:background="@drawable/round_white"
+                android:layout_toRightOf="@id/Email">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_Email">
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:text="รหัสผ่าน  :"
+                android:textSize="15sp"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <EditText
+                android:id="@+id/id_password"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:background="@drawable/round_white"
+                android:layout_toRightOf="@id/password"
+                android:inputType="textPassword"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_Password">
+            <TextView
+                android:id="@+id/Gender"
+                android:text="เพศ         : "
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <RadioGroup
+                android:id="@+id/rd_gender"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/Gender"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ชาย"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/opunmairegular" />
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="หญิง"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/opunmairegular" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_bd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_gender">
+            <TextView
+                android:id="@+id/bd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:text="วันเกิด     : "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/opunmairegular"/>
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/bd"
+                android:text="dd / mm / yyyy"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/bt_date"
+                android:layout_marginTop="5dp"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/text_date"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/round_blue"
+                android:fontFamily="@font/opunmairegular"
+                android:text="Select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_bd">
+            <TextView
+                android:id="@+id/type"
+                android:text="ประเภท    : "
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <RadioGroup
+                android:id="@+id/rd_type"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/type"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/runner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="นักวิ่ง"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/opunmairegular"/>
+                <RadioButton
+                    android:id="@+id/manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="ผู้จัดกิจกรรม"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/opunmairegular"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/title_type">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/round_red"
+                android:text="ยกเลิก"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opunmairegular"/>
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="ลงทะเบียน"
+                android:layout_toRightOf="@+id/btn_cancel"
+                android:background="@drawable/round_green"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/opunmairegular"
+                android:onClick="showAlertDialog"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

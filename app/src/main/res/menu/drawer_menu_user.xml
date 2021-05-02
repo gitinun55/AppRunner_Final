@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="งานวิ่ง">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"
+                android:title="หน้าแรก" />
+            <item
+                android:id="@+id/event"
+                android:icon="@drawable/ic_event"
+                android:title="งานวิ่งของฉัน/สถิติของฉัน" />
+        </menu>
+    </item>
+
+    <item android:title="การชำระ">
+        <menu>
+            <item
+                android:id="@+id/submit_payment"
+                android:icon="@drawable/ic_payment"
+                android:title="ส่งหลักฐานการชำระ" />
+            <item
+                android:id="@+id/status_payment"
+                android:icon="@drawable/ic_check"
+                android:title="เช็คสถานะการชำระ" />
+        </menu>
+    </item>
+
+    <item android:title="ประวัติ">
+        <menu>
+            <item
+                android:id="@+id/uplodestatistics"
+                android:icon="@drawable/ic_upload"
+                android:title="อัปโหลดสถิติการวิ่ง" />
+            <item
+                android:id="@+id/status_reward"
+                android:icon="@drawable/ic_reward"
+                android:title="เช็คสถานะการจัดส่งรางวัล" />
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_edit"
+                android:title="ประวัติส่วนตัว" />
+        </menu>
+    </item>
+
+    <item android:title="อื่นๆ">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="ออกจากระบบ" />
+        </menu>
+    </item>
+
+</menu>

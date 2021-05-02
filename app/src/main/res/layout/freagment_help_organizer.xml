@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_bg"
+    android:fillViewport="false"
+    tools:context=".Organizer.menu7_help_organizer.Fragment.HelpFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/help_organizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="ศูนย์ช่วยเหลือ"
+            android:drawableStart="@drawable/ic_help"
+            android:fontFamily="@font/opunmairegular" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

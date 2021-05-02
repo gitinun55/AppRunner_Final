@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context=".User.menu5_uplode_stat.Fragment.EventProfileUplodeFragment">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_uplode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="งานวิ่งที่ต้องการอัปโหลด"
+            android:fontFamily="@font/opunmairegular" />
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_uplode"
+            android:text="* คุณสามารถเลือกงานวิ่งที่ต้องการอัปโหลดสถิติได้จากเมนูหน้านี้"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/opunmairegular">
+        </TextView>
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout_profile_uplode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

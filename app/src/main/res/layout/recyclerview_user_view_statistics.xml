@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    tools:context=".User.menu2_profile_event.Adapter.MenuEventUserAdapter">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_menu_event_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="#FFFF"
+        app:cardCornerRadius="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="#4f0e0d0e">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:background="@color/color_bg">
+
+                <TextView
+                    android:id="@+id/tv_event_name_menu_event_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_producer_name"
+                    android:layout_marginBottom="0dp"
+                    android:text="Event Name"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_producer_name_menu_event_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="producer"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_event_name_menu_event_user"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/person">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/btn_statics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="สถิติวิ่งของคุณ"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/round_blue"
+                    android:layout_marginLeft="240dp">
+                </Button>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

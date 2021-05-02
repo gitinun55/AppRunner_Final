@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context=".ForgotActivity">
+
+    <RelativeLayout
+        android:id="@id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_white">
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  ตั้งรหัสผ่านใหม่"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/opunmairegular">
+        </TextView>
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_below="@id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   อีเมล์"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/opunmairegular">
+        </TextView>
+
+        <EditText
+            android:id="@+id/reset_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title3"
+            android:layout_margin="7dp"
+            android:background="#E7E7E7">
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/send_password"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title1"
+        android:text="เปลี่ยนรหัสผ่าน"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/round_green">
+    </Button>
+
+</RelativeLayout>

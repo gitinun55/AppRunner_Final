@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context=".Organizer.menu3_check_payment.Fragment.Select_event_paymentFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:text="กิจกรรมที่ต้องการตรวจสอบการชำระ"
+        android:fontFamily="@font/opunmairegular">
+    </TextView>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:text="*สามารถอนุมัติการชำระได้ในหน้าเมนูนี้"
+        android:fontFamily="@font/opunmairegular">
+    </TextView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout_event_payment"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_eventpayment_organizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

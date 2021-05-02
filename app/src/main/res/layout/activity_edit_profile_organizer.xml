@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context=".Organizer.menu6_profile_organizer.Activity.EditProfileOrganizerActivity">
+
+    <RelativeLayout
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Edtprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="แก้ไขประวัติส่วนตัว"
+            android:fontFamily="@font/opunmairegular" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailsEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:id="@+id/path_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_white"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:scaleType="centerCrop"/>
+            <Button
+                android:id="@+id/btn_addPicture"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/imgProfile"
+                android:background="@drawable/round_blue"
+                android:text="choose picture"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/FName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/path_picture"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/text_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อ                   :"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <EditText
+                android:id="@+id/FNameEdt"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft ="10dp"
+                android:layout_toRightOf="@id/text_fname"
+                android:hint="   "
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_white">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LName"
+            android:layout_below="@id/FName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/text_lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="นามสกุล          :"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <EditText
+                android:id="@+id/LNameEdt"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/text_lname"
+                android:hint="   "
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_white">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LName"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/text_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เบอร์โทรศัพท์  :"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <EditText
+                android:id="@+id/telEdt"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/text_tel"
+                android:background="@drawable/round_white"
+                android:hint="   "
+                android:textSize="15dp"></EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/idcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tel"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/text_idcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เลขบัตรประชาชน  :"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+            <EditText
+                android:id="@+id/idEdt"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:hint="   "
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/text_idcard"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_white">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/text_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idcard">
+            <TextView
+                android:id="@+id/Gender"
+                android:text="เพศ              :"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opunmairegular">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rd_gender"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/Gender"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ชาย"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/opunmairegular" />
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="หญิง"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/opunmairegular" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_gender">
+            <TextView
+                android:id="@+id/bd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:text="วันเกิด          :"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/opunmairegular"/>
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/bd"
+                android:text="dd / mm / yyyy"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_toRightOf="@+id/text_date"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_blue"
+                android:text="Select" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsEdt"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_green"
+            android:text="บันทึก"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

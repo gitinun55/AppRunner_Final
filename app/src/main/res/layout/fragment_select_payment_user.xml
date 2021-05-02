@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context=".User.menu3_submit_payment.Freagment.SelectPaymentUserFragment">
+
+    <RelativeLayout
+        android:id="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_event_selec_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:text="งานวิ่งที่ต้องการส่งหลักฐานการชำระ"
+            android:fontFamily="@font/opunmairegular" />
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_event_selec_payment"
+            android:text="* เลือกงานวิ่งเพื่อส่งหลักฐานการโอน"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/opunmairegular">
+        </TextView>
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout_select_payment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_event_select_payment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

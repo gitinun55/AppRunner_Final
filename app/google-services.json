@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "78491473246",
+    "firebase_url": "https://vistual-running.firebaseio.com",
+    "project_id": "vistual-running",
+    "storage_bucket": "vistual-running.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78491473246:android:08a2ff41f500d1c7ee2bcf",
+        "android_client_info": {
+          "package_name": "com.example.apprunner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78491473246-7o9gcatvotron3ct2eq2huubejefkhb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9LuiccHDacvTI4fE9B1S4xcd1fO_HOQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78491473246-7o9gcatvotron3ct2eq2huubejefkhb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

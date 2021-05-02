@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apprunner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Camera and storage permission will be required -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Virtual Running "
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Organizer.menu3_check_payment.Activity.DetailCancelActivity"></activity>
+        <activity android:name=".Organizer.menu6_profile_organizer.Activity.EditProfileOrganizerActivity" />
+        <activity android:name=".User.menu6_profile_user.Activity.EditProfileUserActivity" />
+        <activity android:name=".ForgotActivity" />
+        <activity android:name=".User.menu7_check_reward.Activity.ChooseUserOrderActivity" />
+        <activity android:name=".Organizer.menu5_update_reward.Adapter.ChooseUserOrderAdapter" />
+        <activity android:name=".User.menu3_submit_payment.Activity.PaymentActivity" />
+        <activity android:name=".Organizer.menu5_update_reward.Activity.ShowRewardActivity" />
+        <activity android:name=".Organizer.menu5_update_reward.Activity.InsertRewardActivity" />
+        <activity android:name=".Organizer.menu5_update_reward.Adapter.ChooseUserRewardAapter" />
+        <activity android:name=".Organizer.menu5_update_reward.Activity.ChooseUserRewardActivity" />
+        <activity android:name=".Organizer.menu4_check_distance.Activity.DetailDistanceUserActivity" />
+        <activity android:name=".Organizer.menu4_check_distance.Adapter.ChooseUserDistanceAdapter" />
+        <activity android:name=".Main.DetailDistanceAdapter" />
+        <activity android:name=".Organizer.menu4_check_distance.Activity.ChooseUserDistanceActivity" />
+        <activity android:name=".User.menu7_check_reward.Adapter.EventCheckStatusAdapter" />
+        <activity android:name=".User.menu2_profile_event.Adapter.ShowStatUserAdapter" />
+        <activity android:name=".Organizer.menu5_update_reward.Adapter.Event_reward_organizerAdapter" />
+        <activity android:name=".User.menu4_check_payment.Activity.DetailPaymentUserActivity" />
+        <activity android:name=".User.menu3_submit_payment.Activity.UplodePaymentActivity" />
+        <activity android:name=".User.menu3_submit_payment.Adapter.SelectPaymentUserAdapter" />
+        <activity android:name=".Organizer.menu3_check_payment.Activity.DetailSubmitPaymentActivity" />
+        <activity android:name=".Organizer.menu3_check_payment.Adapter.Select_user_paymentAdapter" />
+        <activity android:name=".Organizer.menu3_check_payment.Activity.Select_user_paymentActivity" />
+        <activity android:name=".Organizer.menu3_check_payment.Adapter.Select_event_paymentAdapter" />
+        <activity android:name=".Organizer.menu2_profile_event.Adapter.ListNameRegEventAdapter" />
+        <activity android:name=".Organizer.menu2_profile_event.Activity.ListNameRegEventActivity" />
+        <activity android:name=".Organizer.menu2_profile_event.Activity.DetailEventOrganizerActivity" />
+        <activity android:name=".Organizer.menu2_profile_event.Adapter.Event_profileAdapter" />
+        <activity android:name=".SelectUserUplodeActivity" />
+        <activity android:name=".User.menu2_profile_event.Activity.ShowDistanceEventActivity" />
+        <activity android:name=".User.menu5_uplode_stat.Activity.UplodeStatistics" />
+        <activity android:name=".Main.DetailEventUserActivity" />
+        <activity android:name=".User.menu1_home.Activity.RegAddressActivity" />
+        <activity android:name=".User.menu1_home.Activity.RegEventActivity" />
+        <activity
+            android:name=".Organizer.menu1_home.Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Login.RegisterappActivity" />
+        <activity
+            android:name=".User.menu1_home.Activity.SecondActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Organizer.menu1_home.Activity.MainActivityAddEvent" />
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityCricketers" /> <!-- add in application tag -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

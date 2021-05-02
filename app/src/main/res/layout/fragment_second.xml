@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.menu1_home.Fragment.SecondFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/ic_username"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_baseline_person_24">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/ic_username"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="30dp"
+                    android:text="สวัสดี"
+                    android:fontFamily="@font/opunmairegular">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/showname"
+                    android:layout_below="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="110dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:text="ชื่อ : "
+                    android:textColor="#000000"
+                    android:fontFamily="@font/opunmairegular"/>
+
+                <TextView
+                    android:id="@+id/tv_FName_user"
+                    android:layout_below="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/opunmairegular"
+                    android:textStyle="bold"
+                    android:text="FName "/>
+
+                <TextView
+                    android:id="@+id/tv_LName_user"
+                    android:layout_below="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/tv_FName_user"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/opunmairegular"
+                    android:text="LName "/>
+
+                <TextView
+                    android:id="@+id/stuts_user"
+                    android:layout_below="@+id/showname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="สถานะ :"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/opunmairegular"/>
+
+                <TextView
+                    android:id="@+id/tv_stuts_user"
+                    android:layout_below="@+id/showname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="180dp"
+                    android:text="Stutus"
+                    android:fontFamily="@font/opunmairegular"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_search_user"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:hint="Search Event"
+                    android:textAlignment="center"
+                    android:background="@drawable/round_white"/>
+
+                <Button
+                    android:id="@+id/bt_search_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Search"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/round_primary"/>
+
+            </LinearLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refreshlayout_second"
+                android:layout_width="wrap_content"
+                android:layout_height="475dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
